@@ -29,7 +29,7 @@ int main (int argc, char** argv){
 			}
 
 			// Running pcode machine
-			fprintf(output, "%-10s %-7s %-7s %-7s %-7s %-8s %s\n","Inst","Level","Arg","Top","Counter","Base","Stack");
+			fprintf(output, "%-10s %-7s %-7s %-7s %-7s %-8s %s\n","Inst","Level","Arg","Top","PC","Base","Stack");
 			pcode(instructions,stack,output);
 		}else{
 			printf ("\'code.txt\' not found.");
